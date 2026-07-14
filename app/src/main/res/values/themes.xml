@@ -1,0 +1,3 @@
+<style name="Theme.AppCompat.Light.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">#673AB7</item>
+</style>
