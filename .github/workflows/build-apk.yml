@@ -10,11 +10,13 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      - name: Beri Izin Gradle
-        run: chmod +x gradlew
-      - name: Buat File APK
+      - name: Cek & Beri Izin Gradle
+        run: |
+          chmod +x gradlew
+          ls -la
+      - name: Build APK
         run: ./gradlew assembleDebug
-      - name: Simpan Hasil APK
+      - name: Simpan Hasil
         uses: actions/upload-artifact@v4
         with:
           name: Novora-APK
